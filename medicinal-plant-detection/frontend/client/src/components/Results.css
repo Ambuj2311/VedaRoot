@@ -1,0 +1,138 @@
+.results-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+              url("../../../../backend/static/uploads/banana.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.results-container h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.result-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin: 2rem 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.plant-name {
+  font-size: 1.5rem;
+  color: #27ae60;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.confidence {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
+
+/* .try-again-button {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+} */
+
+
+
+.plant-image-container {
+  flex: 1;
+  max-width: 300px;
+  float: left;
+}
+
+.plant-image {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.plant-details {
+  flex: 2;
+}
+
+.plant-name {
+  color: #2c7a3d;
+  margin: 0 0 1rem;
+}
+
+.confidence {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.detail-section {
+  margin-bottom: 1.5rem;
+}
+
+.detail-section h4 {
+  color: #2c7a3d;
+  margin: 0 0 0.5rem;
+}
+
+.detail-section p {
+  color: #02751f;
+  line-height: 1.6;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.try-again-button, .home-button {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.try-again-button {
+  background-color: #2c7a3d;
+  color: white;
+}
+
+.home-button {
+  background-color: #2c7a3d;
+  color: white;
+}
+
+.try-again-button:hover {
+  background-color: #075b04;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.home-button:hover {
+  background-color: #075b04;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+

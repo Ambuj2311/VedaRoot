@@ -1,0 +1,77 @@
+.upload-container {
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+              url("../../../../backend/static/uploads/banana.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.upload-container h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #feffff;
+}
+
+.dropzone {
+  width: 80%;
+  max-width: 500px;
+  height: 300px;
+  border: 2px dashed #3498db;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 2rem;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dropzone:hover {
+  border-color: #2980b9;
+  background-color: #f8f9fa;
+}
+
+.preview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-preview {
+  max-width: 100%;
+  max-height: 250px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  background-color: #34db34;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: #29b96f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}

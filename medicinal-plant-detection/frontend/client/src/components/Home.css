@@ -1,0 +1,51 @@
+.landing-container {
+  height: 100vh;
+  width: 100%;
+}
+
+.hero-section {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+              url("../../../../backend/static/uploads/banana.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-overlay {
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.app-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.app-description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.try-button {
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.try-button:hover {
+  background-color: #27ae60;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
